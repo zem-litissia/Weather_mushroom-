@@ -10,4 +10,6 @@ Weather Mushroom is a simple web application for checking the current weather of
 ### In devlopment 💻⌨️
 * website V1 in devlopment
 * app soon
+## Templet:
+<img width="907" alt="image" src="https://github.com/user-attachments/assets/5bbfd6f5-44e0-46d3-983f-dea57a5dc86a">
 
