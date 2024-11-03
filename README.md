@@ -7,4 +7,7 @@ Weather Mushroom is a simple web application for checking the current weather of
 * CSS - Styling for the UI.
 * JavaScript - Handles the API requests and updates the UI with weather data.
 * Weather API - Provides the weather data for locations.
-### in devlopment
+### In devlopment
+* website V1 in devlopment
+* app soon
+
