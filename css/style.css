@@ -3,6 +3,7 @@
 }
 .logo{
     height: 80px;
+    margin-left:15px;
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -54,24 +55,33 @@ input {
     padding: 8px;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(126, 114, 73);
     margin-top: 20px;
 }
-
+input:hover{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
 button {
     background: #fcd24f;
-    color: white;
+    color: black;
     padding: 10px;
-    border: none;
-    border-radius: 10px;
+    border:2px solid #1f1347;
+    border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
     width: 100px;
     font-size: 15px;
 }
 
+
 button:hover {
     background:#cead49;
+    color: white;
+    border: none;
+
 }
 
 #temp-div p {
