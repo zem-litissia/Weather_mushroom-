@@ -1,5 +1,6 @@
 # Weather_mushroom
 ![logoweb](https://github.com/user-attachments/assets/c55546e7-6e5b-4e98-8f98-facd6034a62a)
+<tr></tr>
 # Weather Mushroom 🌦️🍄
 Weather Mushroom is a simple web application for checking the current weather of any location you search for. This lightweight app uses a weather API to display the temperature, weather conditions, and other basic weather information.
 # Technologies Used
