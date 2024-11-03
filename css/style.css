@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Itim&family=Zain:wght@200;300;400;700;800;900&display=swap');
 *{
     background-color: #fff4e4;
 }
@@ -46,12 +47,16 @@ body{
 }
 
 h2, label, p {
-    color: #938f88;
+    color: #9f512d;
     margin: 8px 0;
+    font-family: "Itim", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
 
 input {
     width: calc(100% - 16px);
+    font-family: "Itim", cursive;
     padding: 8px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -61,7 +66,7 @@ input {
 input:hover{
     text-decoration: none;
     outline: none;
-    cursor: pointer;
+     cursor: pointer;
     transition: transform 0.5s;
 }
 button {
@@ -73,6 +78,7 @@ button {
     cursor: pointer;
     margin-top: 20px;
     width: 100px;
+    font-family: "Itim", cursive;
     font-size: 15px;
 }
 
