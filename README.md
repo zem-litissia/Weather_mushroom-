@@ -12,7 +12,7 @@ Weather Mushroom is a simple web application for checking the current weather of
 * app soon
 ## Screenshots :
 ### Website V1.0
-<img width="904" alt="image" src="https://github.com/user-attachments/assets/cacae004-6425-4cde-9448-9e602542214c">
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/55c1b9c3-44c7-49a9-a021-23bb2dbb4bd7">
 
 ### Application:
 ......[coming soon}
