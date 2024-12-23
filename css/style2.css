@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    font-family: 'Itim', cursive;
+    background-color: #fff4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    background-color: transparent;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    padding: 8px 16px; /* Reduced padding */
+}
+
+.logo {
+    height: 60px; /* Reduced size */
+    margin-top: -80px;
+    margin-bottom: 20px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%; /* Reduced width */
+    max-width: 1000px; /* Reduced max width */
+    margin-top: 15px; /* Reduced margin */
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0);
+    padding: 15px; /* Reduced padding */
+    border-radius: 12px; /* Reduced border-radius */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1); /* Reduced shadow size */
+    width: 40%; /* Reduced width */
+    text-align: center;
+}
+
+h2 {
+    color: #9f512d;
+    font-size: 20px; /* Reduced font size */
+    font-weight: bold;
+    margin-bottom: 15px; /* Reduced margin */
+}
+
+input {
+    width: 85%; /* Reduced width */
+    padding: 8px; /* Reduced padding */
+    border-radius: 8px; /* Reduced border-radius */
+    border: 1px solid rgb(126, 114, 73);
+    outline: none;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 14px; /* Reduced font size */
+}
+
+button {
+    background-color: #fcd24f;
+    color: black;
+    padding: 8px 16px; /* Reduced padding */
+    border: 2px solid #1f1347;
+    border-radius: 16px; /* Reduced border-radius */
+    cursor: pointer;
+    font-size: 14px; /* Reduced font size */
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #cead49;
+    color: white;
+    border: none;
+}
+
+#weather-icon {
+    display: none;
+    /* visibility: hidden; */
+    width: 80px; /* Reduced size */
+    height: 80px; /* Reduced size */
+    margin: auto;
+}
+
+#temp-div,
+#weather-info {
+    color: #9f512d;
+    font-size: 18px; /* Slightly smaller font size */
+    margin-top: 8px; /* Reduced margin */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Reduced width */
+}
+
+.image1 {
+    width: 100%;
+    max-width: 400px; /* Reduced max width */
+    height: auto;
+    border-radius: 8px; /* Reduced border-radius */
+}
+
+#hourly-forecast {
+    margin-top: 50px; /* Reduced margin */
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 70px; /* Reduced width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 8px; /* Reduced margin */
+    color: #9f512d;
+}
+
+.hourly-item img {
+    width: 25px; /* Reduced size */
+    height: 25px; /* Reduced size */
+    margin-bottom: 4px; /* Reduced margin */
+}
+
+#hourly-heading {
+    color: #fff;
+    margin-top: 8px; /* Reduced margin */
+}
