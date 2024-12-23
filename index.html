@@ -5,32 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather mushroom </title>
     <link rel="icon" type="image/x-icon" href="css/logo.png "/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="navbar">
-        <img class="logo" src="css/logoweb.png" alt="img">
+        <img class="logo" src="css/logo1.png" alt="img">
+        <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
     </header>
+
         <main>
-            <img class="image2" src="css/img2.png" alt="img">
-        <div id="weather-container">
-            <h2>check your weather now</h2>
+            <section class="hero-section">
+                <!-- Weather Container -->
+         <div id="weather-container">
+            <h2>Check your weather now</h2>
             <input type="text" id="city" placeholder="Enter city">
-            <button onclick="getWeather()">Search</button>
-    
-            <img id="weather-icon" alt="Weather Icon">
-    
+            <button id="weather-button" onclick="getWeather()">Search</button>
+            <img id="weather-icon" alt="Weather-Icon">
             <div id="temp-div"></div>
-    
             <div id="weather-info"></div>
-    
             <div id="hourly-forecast"></div>
         </div>
-        <img class="image1"src="css/img1.png" alt="img2">
-        <!-- <p class="PF">@zem-litissia2024</p> -->
-        <img class="image3" src="css/img3.png" alt="img">
-          <script src="js/index.js"></script>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <img class="image1" src="css/113.png" alt="Image">
+        </div> 
+               
+            </section>
+          <section class="about-section" id="about">
+              <h2>About</h2>
+              <img src="css/img2.jpg" alt="aboutimg">
+              <div class="about-text">
+                  <p>Welcome to Mushroom Weather! We provide accurate and timely weather forecasts for your city, helping you plan your day or week ahead. Our goal is to deliver reliable weather updates in a simple, user-friendly format, so you can make informed decisions, no matter the weather.</p>
+              </div>
+          </section>
+          <section class="contact-section" id="contact">
+            <h2>Contact</h2>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="63b3f6e6-12a6-4c47-b426-d4a83454955b">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+              <img src="css/img4.jpg" alt="contactimg" class="img1">
+              <img src="css/img5.jpg" alt="contactimg" class="img2">
+              <img src="css/img6.jpg" alt="contactimg" class="img3">
+              <div class="email-section">
+                <i class="fas fa-envelope"></i>
+                <span>litissiazemmour@gmail.com</span>
+              </div>
+            
+              
+          </section>
         </main>
-    <footer></footer>
+        <footer class="footer">
+            <p>&copy; 2024 Weather Mushroom. zemliti.</p>
+          </footer>
+          <script src="js/index.js"></script>
 </body>
 </html>
