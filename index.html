@@ -6,17 +6,36 @@
     <title>Weather mushroom </title>
     <link rel="icon" type="image/x-icon" href="css/logo.png "/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/winter.css">
 </head>
 <body>
-    <header class="navbar">
-        <img class="logo" src="css/logo1.png" alt="img">
-        <ul>
+  <header class="navbar">
+    <div class="logo"></div> <!-- Logo is now a div -->
+    <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
+    </ul>
+
+    <div class="settings-container">
+      <!-- Settings button icon -->
+      <button id="settings-btn" class="settings-icon">⚙️</button>
+      
+      <!-- Theme switcher container -->
+      <div id="theme-switcher" class="theme-switcher">
+        <!-- Style options for changing themes -->
+        <button class="style-option1" data-style="./css/style.css"></button>
+        <button class="style-option2" data-style="./css/winter.css"></button>
+      </div>
+      
+      <!-- Default stylesheet (to be swapped) -->
+      <link id="theme-stylesheet" rel="stylesheet" href="styles.css">
+    </div>
+    
+</header>
+>
+
 
         <main>
             <section class="hero-section">
@@ -33,19 +52,20 @@
 
         <!-- Image Section -->
         <div class="image-container">
-            <img class="image1" src="css/113.png" alt="Image">
-        </div> 
+          <img class="image1" src="css/img3.png" id="myImage" alt="Image">
+      </div> 
                
             </section>
           <section class="about-section" id="about">
-              <h2>About</h2>
+            
+              <h2><i class="fas fa-info-circle"></i>  About</h2>
               <img src="css/img2.jpg" alt="aboutimg">
               <div class="about-text">
-                  <p>Welcome to Mushroom Weather! We provide accurate and timely weather forecasts for your city, helping you plan your day or week ahead. Our goal is to deliver reliable weather updates in a simple, user-friendly format, so you can make informed decisions, no matter the weather.</p>
+                  <p> Welcome to Weather Mushroom! Our website provides accurate and simple weather updates evry 3 hours to help you plan your day, We're also developing a user-friendly app to bring reliable forecasts , Stay prepared with Weather Mushroom rain or shine!. </p>
               </div>
           </section>
           <section class="contact-section" id="contact">
-            <h2>Contact</h2>
+            <h2> <i class="fas fa-phone"></i> Contact</h2>
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="63b3f6e6-12a6-4c47-b426-d4a83454955b">
                 <div class="form-group">
@@ -69,8 +89,6 @@
                 <i class="fas fa-envelope"></i>
                 <span>litissiazemmour@gmail.com</span>
               </div>
-            
-              
           </section>
         </main>
         <footer class="footer">
