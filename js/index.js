@@ -97,3 +97,48 @@ function displayHourlyForecast(hourlyData) {
         hourlyForecastDiv.innerHTML += hourlyItemHtml;
     });
 }
+// Get references to the image and button elements for changing image
+const image = document.getElementById('myImage'); // ID of your image
+const settingsBtn = document.getElementById('settings-btn');
+const themeSwitcher = document.getElementById('theme-switcher');
+const settingsContainer = document.querySelector('.settings-container');
+
+// Function to change the image based on selected style
+function changeImageForStyle(style) {
+  switch (style) {
+    case './css/style.css':
+      image.src = './css/img1.png';  // Replace with the image URL for style 1
+      break;
+    case './css/winter.css':
+      image.src = './css/img3.png';  // Replace with the image URL for style 2
+      break;
+    default:
+      image.src = './css/img3.png';  // Fallback to the default image
+      break;
+  }
+}
+
+// Handle settings button click to toggle the visibility of the theme switcher
+settingsBtn.addEventListener('click', () => {
+  settingsContainer.classList.toggle('moved');  // Toggle visibility of settings container
+  if (themeSwitcher.classList.contains('active')) {
+    themeSwitcher.classList.remove('active');
+    setTimeout(() => (themeSwitcher.style.display = 'none'), 300); // Wait for animation to finish
+  } else {
+    themeSwitcher.style.display = 'block';
+    setTimeout(() => themeSwitcher.classList.add('active'), 10); // Activate animation
+  }
+});
+
+// Handle style selection and change the theme and image
+// Generalize the style selection for all style options
+document.querySelectorAll('[data-style]').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const newStyle = e.target.getAttribute('data-style'); // Get the style file URL
+    const stylesheet = document.getElementById('theme-stylesheet');
+    stylesheet.setAttribute('href', newStyle); // Replace the stylesheet
+
+    // Change the image based on the selected style
+    changeImageForStyle(newStyle);
+  });
+});
