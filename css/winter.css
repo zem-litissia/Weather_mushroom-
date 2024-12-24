@@ -21,7 +21,7 @@
 .logo {
     height: 100px;
     width: 250px;
-    background-image: url('./css/logo2.png');
+    background-image: url('logo2.png');
     background-size: cover;
     background-position: center;
     margin-left: 15px;
@@ -158,7 +158,7 @@ li a:hover{
 
 /* Default background image */
 .hero-section {
-    background-image: url('./css/herobg.png');
+    background-image: url('herobg.png');
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -453,7 +453,7 @@ h2 i {
 }
 /* ++++++++contact++++++++= */
 .contact-section {
-    background-image: url("./css/contactbg.png");
+    background-image: url("contactbg.png");
     border: 1px solid #03272f;
     border-radius: 15%;
     width: 100%;

@@ -20,7 +20,7 @@
 .logo{
     height: 100px;
     width: 250px;
-    background-image: url('./css/logo1.png');
+    background-image: url('logo1.png');
     background-size: cover;
     background-position: center;
     margin-left: 15px;
@@ -162,7 +162,7 @@ h1{
 }
 .hero-section {
     display: flex;
-    background-image: url('./css/bgr.png');
+    background-image: url('./cssbgr.png');
     justify-content: space-between;
     align-items: center;
     width: 75%; /* Reduced width */
